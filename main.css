@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'Foobar';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Foobar'), url('../fonts/Foobar\ Pro-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+:root {
+    --primary: #95D1CC;
+    --secondary: #22577E;
+    --white: #f9f9f9;
+    --border-radius: 5px;
+    --box-shadow-default: 1px 1px 30px -10px rgba(0,0,0,.7);
+}
+/********************** RESET CSS DEFAULTS ********************************/
+    * {
+    width: 100% ;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/********************* STRUCTURE ****************************/
+
+html,
+body {
+    background-color: var(--white);
+    font-family: "Roboto", sans-serif;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--secondary);
+    margin-bottom: 15px;
+    line-height: 120%;
+    font-family: "Foobar";
+}
+
+h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+h2 {
+    font-size: 2.2em; 
+    color: white;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+.btn {
+    padding: 1em 1em;
+    margin-top: auto;
+    border-radius:var(--border-radius);
+    border: none;
+    color: white;
+    align-items:flex-end;
+}
+
+.btn-primary {
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .7s ease;
+    background: var(--secondary);
+    z-index: 1;
+}
+
+/******************* NAVBAR ****************/
+
+.navbar {
+    background: var();
+    
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-content {
+    
+    color: black;
+    align-items:center;
+   
+}
+
+.logo {
+    width: 200px;
+    padding: 1em;
+    justify-content:right;
+   
+}
+
+.navbar-links {
+color:black;  
+display: flex;
+    
+}
+
+.backgroud {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.navbar-text {
+    padding:4em;
+    margin-top: auto;
+    color: white;
+    background-color:blue;
+    text-transform: 1em;
+    display: flex;
+
+}
+
+/********************* FEATURES ****************/
+.features h1 {
+    color: black;
+    padding: 1em;
+    text-align: center;
+}
+.card {
+    width: 100%;
+    overflow: hidden;
+    padding: 5em;
+    color: black;
+    display: flex;
+   
+}
+
+.card-img-overflow {
+    overflow: hidden;
+    color: black;
+}
+
+.card-img {
+    width: 100%;
+    transition: transform .5s ease-in-out;
+}
+.card-img h1 {
+    color: black;
+}
+
+.card-img:hover {
+    transform: scale(1.5);
+}
+
+.card-body {
+    padding: 1em;
+    text-align: center;
+}
+
+.card-body h3 {
+    color: var(--primary);
+}
+
+.card-body p {
+    margin-bottom: 1em;
+}
+/************************ CONTACT *************/
+.formulaire {
+    color: black;
+    background-color: white;
+}
+section.contact{ 
+    margin: 4em 0 0;
+    background:linear-gradient(0deg, var(--primary), var(--secondary));
+    padding: 1em 0;
+}
+.contact h2 {
+    color:var(--primary)
+}
+.contact-row {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info{
+    flex: 0 1 30%;
+}
+.contact-form-content {
+    flex: 0 1 60%;
+    padding: 5em 0; 
+    position: relative;
+}
+
+.contact-from {
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+    background:var(--primary);
+    border: 1px solid (255, 255, 255, .3);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-default);
+    backdrop-filter: blur(5px);
+    --webkit-backdrop-filter: blur(5px);
+}
+
+.input-group {
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 10% 80%;
+   
+}
+.btn {
+    background-color: #22577E;
+    border-radius: var(--border-radius);
+    padding: 0%;
+    width: 100%;
+}
+
+/****************** VIDEO **********/ 
+
+.video {
+    padding: 5em;
+    width: 100%;
+
+}
+.video h1 {
+    color: black;
+}
+.text {
+    width: 100%;
+    text-align:center;
+    padding: 10em;
+    background-color: rgb(190, 240, 235);
+    margin-top: 5%;
+    display: flex;
+    
+}
+/*************** GALERY ****************/
+.galery {
+    color: black;
+    padding: 1em;
+    
+}
+.card-x {
+    display: flex;
+    width: 100%;
+    padding: 5em;
+}
